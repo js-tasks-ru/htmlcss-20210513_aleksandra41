@@ -1,1 +1,84 @@
-/* Стилизация кнопки */
+.page {
+    display: flex;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+
+.page__title {
+    flex: 1 0 auto;
+    font-family: Inter, serif;
+    font-weight: 500;
+    font-size: 38px;
+    width: 180px;
+}
+
+.page__caption {
+    width: 80px;
+    font-family: Inter, serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--grey-3);
+}
+
+.page__content {
+    display: flex;
+    flex-direction: column;
+    flex: 2 0 auto;
+    width: 700px;
+}
+
+.page__row {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 0 auto;
+    padding: 15px;
+}
+
+.page__buttons {
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    font-family: Roboto, serif;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 189px;
+    height: 48px;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.button_secondary {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.button_alternate {
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+}
+
+.button_primary:hover, .button_primary:active, .button_primary:focus {
+    background: var(--dark-blue);
+}
+
+.button_secondary:hover, .button_secondary:active, .button_secondary:focus {
+    background: var(--dark-purple);
+}
+
+.button_alternate:hover, .button_alternate:active, .button_alternate:focus {
+    border-color: var(--black);
+}
+
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+}

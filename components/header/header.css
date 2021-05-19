@@ -1,0 +1,16 @@
+.header {
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
+.header__top {
+    display: flex;
+}
+
+.header__title {
+    font-family: Inter, serif;
+    font-weight: 500;
+    font-size: 50px;
+}
