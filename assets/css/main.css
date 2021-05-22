@@ -1,5 +1,6 @@
+@import './__normalize.css';
+@import './__reset.css';
 @import '../fonts/fonts.css';
-@import 'normalize.css';
 
 :root {
     --white: #ffffff;

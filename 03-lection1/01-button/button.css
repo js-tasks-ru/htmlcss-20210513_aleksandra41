@@ -46,9 +46,14 @@
     font-family: Roboto, serif;
     font-weight: 500;
     border-radius: 8px;
-    width: 189px;
+    min-width: 189px;
+    max-width: 250px;
     height: 48px;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    padding: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .button_primary {
