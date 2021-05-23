@@ -1,0 +1,33 @@
+.preview {
+    padding: 68px 0 204px;
+}
+
+.preview__container {
+    display: inline-flex;
+    margin: -15px;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+
+.preview__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 367px;
+    background: var(--white);
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    padding: 80px 26px 30px;
+}
+
+.preview__card-container {
+    flex: 1 0 33%;
+    padding: 15px;
+}
+
+.preview__card-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 21px;
+    text-align: center;
+}
