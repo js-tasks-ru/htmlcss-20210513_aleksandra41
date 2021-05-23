@@ -1,0 +1,18 @@
+.page {
+    display: flex;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+
+.page__title {
+    flex: 1 0 auto;
+    font-family: Inter, serif;
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.page__content {
+    display: flex;
+    flex-direction: column;
+    flex: 2 0 auto;
+}

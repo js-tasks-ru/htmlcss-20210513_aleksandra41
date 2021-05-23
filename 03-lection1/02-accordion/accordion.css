@@ -1,24 +1,3 @@
-.page {
-    display: flex;
-    padding: 100px;
-    flex-wrap: wrap;
-}
-
-.page__title {
-    flex: 1 0 auto;
-    font-family: Inter, serif;
-    font-weight: 500;
-    font-size: 38px;
-    width: 200px;
-}
-
-.page__content {
-    display: flex;
-    flex-direction: column;
-    flex: 2 0 auto;
-    width: 750px;
-}
-
 .accordion {
     width: 730px;
     background: var(--white);
@@ -26,7 +5,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     margin-bottom: 8px;
-    padding: 32px;
+    padding: 24px 32px;
 }
 
 .accordion__text {
@@ -36,7 +15,8 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--grey-4);
-
+    margin: 0;
+    padding: 16px 16px 8px 0;
 }
 
 .accordion__summary {
