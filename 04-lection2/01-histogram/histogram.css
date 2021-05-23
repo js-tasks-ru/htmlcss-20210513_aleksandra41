@@ -23,7 +23,7 @@
 }
 
 .histogram__link {
-    color: #4263EB;
+    color: var(--blue);
     padding-top: 3px;
     cursor: pointer;
 }
@@ -43,7 +43,7 @@
 }
 
 .histogram__column {
-    background: #4263EB;
+    background: var(--blue);
     margin-right: 1px;
     flex: 1 1 auto;
     min-width: 1px;
