@@ -1,28 +1,7 @@
-.page {
-    display: flex;
-    padding: 100px;
-    flex-wrap: wrap;
-}
-
-.page__title {
-    flex: 1 0 auto;
-    font-family: Inter, serif;
-    font-weight: 500;
-    font-size: 38px;
-    width: 200px;
-}
-
-.page__content {
-    display: flex;
-    flex-direction: column;
-    flex: 2 0 auto;
-    width: 300px;
-}
-
 /*
 Добавление анимации в данный класс
 */
-.skeleton {
+.skeleton__item {
     background: var(--grey-2);
 }
 
@@ -37,48 +16,46 @@
     width: 100%;
 }
 
-.card {
+.skeleton {
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-    min-width: 300px;
-    max-width: 579px;
 }
 
-.card__header {
+.skeleton__header {
     display: flex;
     padding: 24px;
 }
 
-.card__img {
+.skeleton__circle-wrapper {
     width: 64px;
     height: 64px;
     padding-right: 16px;
 }
 
-.card__lines {
+.skeleton__lines {
     display: flex;
     flex-direction: column;
 }
 
-.card__description {
+.skeleton__description {
     padding: 0 40px 32px 24px;
 }
 
-.card__info {
+.skeleton__info {
     padding-top: 8px;
     width: 48.6%;
 }
 
-.card__info .card__line:first-child {
+.skeleton__info .skeleton__line-wrapper:first-child {
     width: 66.9%;
 }
 
-.card__line {
+.skeleton__line-wrapper {
     height: 20px;
     padding-bottom: 8px;
 }
 
-.card__line:last-child {
+.skeleton__line-wrapper:last-child {
     padding-bottom: 0;
 }
