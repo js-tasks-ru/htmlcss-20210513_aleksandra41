@@ -11,6 +11,8 @@
 
 .preview__card {
     display: flex;
+    width: calc(33% - 30px);
+    margin: 15px;
     flex-direction: column;
     justify-content: space-between;
     height: 367px;
@@ -18,11 +20,6 @@
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
     padding: 80px 26px 30px;
-}
-
-.preview__card-container {
-    flex: 1 0 33%;
-    padding: 15px;
 }
 
 .preview__card-title {
