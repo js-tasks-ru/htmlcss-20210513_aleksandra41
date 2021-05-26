@@ -53,9 +53,8 @@
 
 .skeleton__line-wrapper {
     height: 20px;
-    padding-bottom: 8px;
 }
 
-.skeleton__line-wrapper:last-child {
-    padding-bottom: 0;
+.skeleton__line-wrapper + .skeleton__line-wrapper {
+    margin-top: 8px;
 }
