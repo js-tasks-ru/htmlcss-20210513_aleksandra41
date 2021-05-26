@@ -45,7 +45,7 @@
     background-size: 16px 8px;
 }
 
-[open]>.accordion__summary::after {
+.accordion[open]>.accordion__summary::after {
     transform: rotate(180deg);
 }
 
