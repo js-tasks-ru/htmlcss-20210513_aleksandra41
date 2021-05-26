@@ -34,7 +34,7 @@
     padding-right: 24px;
 }
 
-.header__nav-item:first-child {
+.header__nav-item_active {
     color: var(--black);
 }
 
