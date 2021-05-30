@@ -7,6 +7,8 @@
 
 .header__top {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__title {
@@ -18,4 +20,24 @@
 .header__logo {
     flex: 0 0 110px;
     height: 32px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-item {
+    font-family: Inter, serif;
+    line-height: 24px;
+    color: var(--grey-3);
+    text-decoration: none;
+    padding-right: 24px;
+}
+
+.header__nav-item_active {
+    color: var(--black);
+}
+
+.header__nav-item:last-child {
+    padding-right: 0;
 }
