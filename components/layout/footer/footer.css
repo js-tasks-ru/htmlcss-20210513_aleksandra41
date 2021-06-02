@@ -1,0 +1,15 @@
+.footer {
+    height: 130px;
+    grid-area: footer;
+    justify-self: center;
+    padding: 56px 0;
+}
+
+.footer__text {
+    color: var(--grey-3);
+    text-transform: uppercase;
+    font-family: Inter, serif;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0;
+}
