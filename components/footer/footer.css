@@ -4,19 +4,21 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 71px;
-}
-
-.footer__title {
-    font-family: Inter, serif;
-    font-weight: 500;
-    font-size: 38px;
+    padding: 20px 0;
 }
 
 .footer__text {
-    font-family: Inter, serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+@media all and (min-width: 750px) {
+    .footer {
+        padding: 71px 0;
+    }
+
+    .footer__text {
+        max-width: 640px;
+        padding-top: 32px;
+    }
 }

@@ -1,5 +1,12 @@
 .component {
     background: var(--white);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
+    grid-area: auto / menu / auto / component;
+}
+
+@media all and (min-width: 750px) {
+    .component {
+        grid-area: component;
+        border-radius: 12px;
+    }
 }

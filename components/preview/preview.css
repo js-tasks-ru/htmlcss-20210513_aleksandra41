@@ -1,21 +1,20 @@
 .preview {
-    padding: 68px 0 204px;
+    padding: 22px 0;
 }
 
 .preview__container {
-    display: inline-flex;
-    margin: -15px;
+    display: flex;
     flex-wrap: wrap;
-    min-width: 100%;
+    margin: calc(-15px / 2);
 }
 
 .preview__card {
     display: flex;
-    width: calc(33% - 30px);
-    margin: 15px;
+    width: 100%;
+    margin: calc(15px / 2);
     flex-direction: column;
     justify-content: space-between;
-    height: 367px;
+    height: 231px;
     background: var(--white);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
@@ -27,4 +26,26 @@
     font-weight: 500;
     font-size: 21px;
     text-align: center;
+}
+
+@media all and (min-width: 387px) {
+    .preview__card {
+        width: calc(50% - 15px);
+    }
+}
+
+@media all and (min-width: 887px) {
+    .preview {
+        padding: 68px 0 204px;
+    }
+
+    .preview__container {
+        margin: -15px;
+    }
+
+    .preview__card {
+        width: calc(33.333% - 30px);
+        height: 367px;
+        margin: 15px;
+    }
 }
