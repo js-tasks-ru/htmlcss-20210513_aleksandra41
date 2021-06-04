@@ -4,9 +4,32 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
     </head>
-    <body>
+    <body style='padding: 150px'>
+        <div>
+            <a  href="#modal">
+                <button class='button button_primary'>Open modal</button>
+            </a>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal__window">
+                <div class='modal__header'>
+                    <div class='modal__header-title'>Modal title</div>
+                    <a href="#" title="Close" class="modal__header-close">
+                        <svg>
+                            <use xlink:href="../../assets/images/sprites.svg#cross"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="modal__body">
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
