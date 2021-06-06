@@ -32,21 +32,20 @@
     cursor: pointer;
 }
 
-.accordion__summary::-webkit-details-marker {
-    display: none;
-}
-
-.accordion__summary::after {
-    content: ' ';
-    display: inline-block;
-    background: url(../../assets/images/arrow.png);
+.accordion__summary-icon {
+    color: var(--grey-4);
+    font-size: 24px;
     height: 8px;
     width: 16px;
-    background-size: 16px 8px;
 }
 
-.accordion[open]>.accordion__summary::after {
+.accordion[open] .accordion__summary-icon {
     transform: rotate(180deg);
+
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
 }
 
 .accordion:last-child {
