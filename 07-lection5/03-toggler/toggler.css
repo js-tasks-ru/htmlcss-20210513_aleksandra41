@@ -1,5 +1,5 @@
 .toggler {
-
+    width: min-content;
 }
 
 .toggler__input {
@@ -12,7 +12,7 @@
 }
 
 .toggler__state {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     cursor: pointer;
 }
