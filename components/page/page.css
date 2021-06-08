@@ -4,7 +4,16 @@
 }
 
 .page__box {
-    padding: 0 165px;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1110px;
+    width: 100%;
+}
+
+@media all and (min-width: 1200px) {
+    .page__box {
+        padding: 0;
+    }
 }
 
 .page__main {
