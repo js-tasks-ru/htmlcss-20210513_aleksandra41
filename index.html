@@ -2,9 +2,11 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <title>Component library</title>
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./components/page/page.css">
         <link rel="stylesheet" href="./components/header/header.css">
+        <link rel="stylesheet" href="./components/tabs/tabs.css">
         <link rel="stylesheet" href="./components/footer/footer.css">
         <link rel="stylesheet" href="./components/preview/preview.css">
     </head>
@@ -12,10 +14,13 @@
         <header class='header'>
             <div class='page__box'>
                 <div class='header__top'>
-                    <svg class='header__logo' viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="1" width="30" height="30" fill="#212429"/>
-                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                    <div class='header__menu-wrapper'>
+                        <svg class="header__menu">
+                            <use xlink:href="./assets/images/sprites.svg#menu"></use>
+                        </svg>
+                    </div>
+                    <svg class="header__logo">
+                        <use xlink:href="./assets/images/sprites.svg#logo"></use>
                     </svg>
                     <nav class='header__nav'>
                         <a href='' class='header__nav-item header__nav-item_active'>Components</a>
@@ -23,8 +28,9 @@
                         <a href='' class='header__nav-item'>Contact</a>
                     </nav>
                 </div>
-                <h1 class='header__title'>Reusable component library</h1>
+                <h1>Reusable component library</h1>
             </div>
+            <div class='tabs__divider'></div>
         </header>
         <main class='page__main'>
             <div class='preview'>
@@ -42,7 +48,7 @@
         </main>
         <footer class='footer'>
             <div class='page__box'>
-                <h2 class='footer__title'>About</h2>
+                <h2>About</h2>
                 <p class='footer__text'>This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
             </div>
         </footer>

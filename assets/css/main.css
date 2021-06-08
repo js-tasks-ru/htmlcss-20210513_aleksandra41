@@ -1,5 +1,7 @@
 @import './__normalize.css';
 @import './__reset.css';
+@import './__global.css';
+@import './__typography.css';
 @import '../fonts/fonts.css';
 
 :root {
@@ -23,8 +25,4 @@
     --secondary: var(--purple);
 
     --title: #334D6E;
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
 }
