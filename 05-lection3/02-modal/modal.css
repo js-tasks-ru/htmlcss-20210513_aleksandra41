@@ -43,7 +43,7 @@
     color: var(--grey-4);
 }
 
-.modal__header-close > svg {
+.modal__icon {
     width: 100%;
     height: 100%;
 }
