@@ -12,7 +12,7 @@
     transition: all 0.3s;
 }
 
-.modal:target {
+.modal_open, .modal:target {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
