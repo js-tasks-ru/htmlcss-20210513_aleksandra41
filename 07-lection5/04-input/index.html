@@ -5,7 +5,45 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
     </head>
-    <body>
+    <body style='padding: 30px;'>
+        <div class="input">
+            <label>
+                <p class="input__label">FOCUS</p>
+                <div class='input__form'>
 
+                </div>
+                <input type="text" name="input-focus" class="input__field" placeholder="Placeholder" />
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <p class="input__label">SUCCESS</p>
+                <div class='input__form'>
+                    <input type="text" name="input-success" class="input__field input__field_success" value="Success" placeholder="Placeholder" />
+                    <svg class="input__icon">
+                        <use xlink:href="../../assets/images/sprites.svg#check-circle"/>
+                    </svg>
+                </div>
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <p class="input__label">ERROR</p>
+                <div class='input__form'>
+                    <input type="text" name="input-error" class="input__field input__field_invalid" value="Error" placeholder="Placeholder" />
+                    <svg class="input__icon">
+                        <use xlink:href="../../assets/images/sprites.svg#alert-triangle"/>
+                    </svg>
+                </div>
+            </label>
+        </div>
+        <div class="input">
+            <label>
+                <p class="input__label">DISABLED</p>
+                <div class='input__form'>
+                    <input type="text" name="input-disabled" class="input__field" value="Disabled" placeholder="Placeholder" disabled>
+                </div>
+            </label>
+        </div>
     </body>
 </html>
