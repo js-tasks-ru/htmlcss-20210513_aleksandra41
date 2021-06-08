@@ -1,0 +1,73 @@
+.input {
+    display: block;
+    max-width: 350px;
+}
+
+.input__label {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    margin-bottom: 5px;
+}
+
+.input__form {
+    position: relative;
+}
+
+.input__field {
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 56px;
+    width: 100%;
+    padding: 17px 40px 13px 24px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    color: var(--grey-4);
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.input__field::placeholder, .input__field:disabled {
+    color: var(--grey-2);
+}
+
+.input__field:focus {
+    border-color: var(--blue);
+    box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.input__field_invalid:not(:focus) {
+    border-color: var(--error);
+    box-shadow: 0 1px 1px rgba(240, 61, 62, 0.1);
+}
+
+.input__field_success:not(:focus) {
+    border-color: var(--success);
+    box-shadow: 0 1px 1px rgba(51, 150, 240, 0.1);
+}
+
+.input__icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input__field_invalid:not(:focus) ~ .input__icon {
+    display: block;
+    color: var(--error);
+}
+
+.input__field_success:not(:focus) ~ .input__icon {
+    display: block;
+    color: var(--success);
+}
