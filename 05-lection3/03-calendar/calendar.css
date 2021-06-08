@@ -11,7 +11,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #334D6E;
+    color: var(--dark-blue-2);
     text-align: center;
     margin-bottom: 24px;
 }
@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     line-height: 20px;
-    color: #334D6E;
+    color: var(--dark-blue-2);
     font-family: Source Sans Pro, serif;
     font-style: normal;
     font-weight: normal;
